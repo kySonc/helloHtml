@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>폼 만들기</title>
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <h1>폼 만들기</h1>
+    <form action="search.php" method="post">
+        <input type="text" title="검색">
+        <input type="submit" value="검색">
+    </form>
+    폼을 만드는 기본 태그. FORM 과 /FORM 사이에 여러 폼 요소 삽입<br>
+    form 태그에서 사용하는 속성들<br>
+    <pre>
+    method : 사용자가 입력한 내용들을 서버 쪽 프로그램으로 어떻게 넘겨줄지 지정<br>
+            속성값 get : 주소 표시줄에 사용자가 입력한 내용이 그대로 드러난다<br>
+                         256byte~4096byte까지의 데이터만 서버로 넘길 수 있다<br>
+                   post: 대부분 이 방식을 사용합니다. 사용자의 입력을 표준 입력으로 넘겨주기 때문에 입력 내용의길이에<br>
+                         제한을 받지 않고 사용자가 입력한 내용이 드러나지 않는다<br>
+    </pre>
+                         name : 폼의 이름을 지정합니다. 한 문서 안에 여러 개의 form태그가 있을 경우, 폼들을 구분하기 위해 사용</form><br>
+    action : form 태그 안의 내용들을 처리해 줄 서버 상의 프로그램을 지정<br>
+    target : action 태그에서 지정한 스크립트 파일을 현재 창이 아닌 다른 위치에 열도록 지정
+  </body>
+</html>
