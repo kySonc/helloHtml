@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>데이터</title>
+    <meta charset="utf-8" />
+    <style>
+      .subm { /*버튼 스타일*/
+        display: block;/*블록 레벨 요소*/
+        background-color: #3fffff;/*배경색*/
+        border: 1px solid #dedede;/*테두리*/
+        cursor: pointer;/*마우스 포인터*/
+        padding: 5px 10px 6px 7px;/*패딩*/
+      }
+      .subm img {/*버튼 내 왼쪽 이미지*/
+        border: 0;/*테두리 없음*/
+        padding: 0;/*패딩 없음*/
+        width: 16px;/*가로 크기*/
+        height: 16px;/*세로 크기*/
+      }
+      .subm:hover {/*버튼 위로 마우스 포인터 올렸을 때 스타일*/
+        background-color: #e6efc2;/*배경색*/
+        border: 1px solid #c6d880;/*테두리*/
+        color: #529215;/*글자색*/
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <input type="submit" value="전송하기" />
+      <button type="submit" class="subm">전송하기</button>
+    </form>
+    <dl>
+      <dt>button 태그</dt>
+      <dd>다양한 형태의 버튼 삽입</dd>
+      <dd>화면 낭독기에서 버튼임을 정확히 전달할 수 있음</dd>
+      <dd>css를 이용해 원하는 형태로 꾸밀 수 있음</dd>
+    </dl>
+    <dl>
+      <dt>textarea 태그의 속성</dt>
+      <dd>submit : 폼을 서버로 전송한다.</dd>
+      <dd>reset : 폼에 입력한 모든 내용을 초기화시킵니다.</dd>
+      <dd>button : 버튼 형태만 만들 뿐 자체기능은 없다</dd>
+    </dl>
+  </body>
+</html>
