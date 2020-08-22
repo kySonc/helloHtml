@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>기타 폼 요소</title>
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <h1>기타 다양한 폼 요소들</h1>
+    <form oninput="result.value=parseInt(num1.value)+parseInt(num2.value)">
+      <input type="number" name="num1" value="0" />
+      +<input type="number" name="num2" value="0" /> =<output
+        name="result"
+        for="num"
+      ></output>
+    </form>
+    <dl>
+      <dt>output 태그</dt>
+      <dd>계산 결과를 브라우저에 표시</dd>
+      <dd>
+        output태그로 묶인 부분이 일반 텍스트가 아니라 계산의 결과값이라는 점을
+        웹 브라우저가 정확히 인식
+      </dd>
+    </dl>
+    <hr>
+    <label for="">10초 남음</label>
+    <progress value="50" max="60"></progress>
+    <label for="">진행룰 30%</label>
+    <progress value="300" max="100"></progress>
+    <dl>
+      <dt>progress 태그</dt>
+      <dd>작업 진행 상태를 브라우저에 표시</dd>
+      <dd>값에는 특별한 단위가 없고 단위를 표시하지도 않음</dd>
+      <dd>
+        value : 작업 진행 상태를 나타내며 부동 소수점으로 표현.<br />
+        이 값은 0보다 크거나 같고 max값보다 작거나 같아야 한다.<br />
+        만약max값이 지정되지 않았다면 이 값은 1.0보다 작아야 한다
+      </dd>
+      <dd>
+        max : 작업이 완료되려면 얼마나 많은 작업을 해야 하는지 부동 소수점으로
+        표현<br />
+        이 값은 0보다 커야한다
+      </dd>
+    </dl>
+    <hr>
+    <label>점유율 0.8</label>
+    <meter value="0.8"></meter>
+    <label>사용량 64%</label>
+    <meter min="0" max="100"value="64"></meter>
+    <label>트래픽 초과</label>
+    <meter min="1024" max="10240" low="2048" high="8192" value="9216"></meter>
+    <label>적절한 트래픽</label>
+    <meter value="0.5" optimum="0.8"></meter>
+    <dl>
+      <dt>meter 속성</dt>
+      <dd>min, max : 범위의 최소값과 최대값을 나타냄. 값을 정하지 않으면 0과1로 간주</dd>
+      <dd>value : 범위 내에서 차지하는 값을 나타냄</dd>
+      <dd>low : '이 정도면 낮다'라고 할 정도의 값을 지정</dd>
+      <dd>high : '이 정도면 높다.'라고 할 정도의 값을 지정</dd>
+      <dd>optimum : '이 정도면 적당하다'라고 할정도의 범위를 지정<br>optimum값이 high 값보다 크다면 value값이 클수로 좋고<br>optimum값이 low 값보다 작다면 value 값이 적을수록 좋다 </dd>
+    </dl>
+  </body>
+</html>
