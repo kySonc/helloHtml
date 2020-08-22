@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>데이터</title>
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <legend>등록 정보</legend>
+        <label for="">관심분야</label>
+        <input type="text" id="interest" list="choices" />
+        <datalist id="choices">
+          <option value="archi" label="문법"></option>
+          <option value="voca" label="어휘"></option>
+          <option value="speaking" label="회화"></option>
+          <option value="listening" label="리스닝"></option>
+          <option value="news" label="뉴스정취"></option>
+        </datalist>
+      </fieldset>
+    </form>
+    <dl>
+      <dt>textarea 태그</dt>
+      <dd>텍스트 영역 - 여러 줄의 텍스트 입력</dd>
+      <dd>게시판의 게시물 입력 창, 회원 가입 양식의 약관 등</dd>
+    </dl>
+    <dl>
+      <dt>textarea 태그의 속성</dt>
+      <dd>name : 다른 폼 요소와 구분하기 위해 텍스트 영역의 이름을 지정</dd>
+      <dd>cols : 텍스트 영역의 가로 너비를 문자 단위로 지정</dd>
+      <dd>
+        rows : 텍스트 영역의 세로 길이를 줄 단위로 지정. 지정한 숫자보다 줄
+        개수가 많아지면 스크롤 막대가 생김
+      </dd>
+    </dl>
+  </body>
+</html>
