@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>신청 과목</title>
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <form action="register.php" method="post">
+      <fieldset>
+        <p>메일링 리스트 등록</p>
+        <label>메일 주소<input type="text" /></label>
+        <input type="submit" value="제출" />
+        <input type="reset" value="다시입력" />
+      </fieldset>
+    </form>
+    <dl>
+      <dt>type="submit",type="reset"</dt>
+      <dd>폼 전송/리셋 버튼</dd>
+      <dd>전송(submit)버튼 : 사용자 입력 내용을 서버로 전송</dd>
+      <dd>리셋(reset)버튼 : 사용자 입력 내용 전부 삭제</dd>
+      <dd>value 속성을 이용해 버튼 표시 내용지정</dd>
+    </dl>
+    <hr>
+    <form>
+      <label>아이디<input type="text" size="15" /></label>
+      <label>비밀번호<input type="password" size="15" /></label>
+      <input type="image" id="butt" src="images/login.jpg" alt="login" />
+    </form>
+    <dl>
+      <dt>type="image"</dt>
+      <dd>submit 버튼 대신 이미지 삽입</dd>
+    </dl>
+  </body>
+</html>
