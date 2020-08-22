@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>태그의 다양한 속성</title>
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <legend>단체 신청자</legend>
+        <label class="reg" for="group">단체 주문</label>
+        <input
+          type="number"
+          id="group"
+          value="10"
+          min="10"
+          max="100"
+          step="10"
+        /><br />
+      </fieldset>
+    </form>
+    <dl>
+      <dt>min, max, step</dt>
+      <dd>min, max : 해당 필드의 최소값,최대값</dd>
+      <dd>step : 허용된 범위 내의 숫자 간격</dd>
+      <dd>
+        type이 date, datetime, datetime-local, month, week, time, range, number
+        일 경우에만 사용
+      </dd>
+    </dl>
+    <form>
+      <fieldset>
+        <legend>신청자</legend>
+        <label class="reg" for="uid">학번</label>
+        <input
+          type="text"
+          id="uid"
+          placeholder="하이폰 없이 입력"
+          maxlength="8"
+          required
+        /><br />
+      </fieldset>
+    </form>
+    <dl>
+      <dt>size, minlength, maxlength</dt>
+      <dd>minlength : 입력해야 할 최소 글자.</dd>
+      <dd>maxlength : 입력 가능한 할 최대 글자</dd>
+      <dd>(크롬과 안드로이드 브라우저에만 지원)</dd>
+    </dl>
+  </body>
+</html>
