@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>input 태그</title>
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <h1>input 태그</h1>
+    <input type="hidden" name="이름" value="서버로 넘길 값" />
+    <dl>
+      <dt>type = "hidden"</dt>
+      <dd>화면 상의 폼에는 보이지 않는다</dd>
+      <dd>폼을 서버롤 전송할 때 서버로 함께 전송되는 요소</dd>
+    </dl>
+    <dl>
+      <dt>type = "text"</dt>
+      <dd>한 줄짜리 텍스트 입력 필드</dd>
+      <dd>주로 아이디나 이름, 주소 등 텍스트 입력</dd>
+    </dl>
+    <input type="text" id="addr" maxlength="3" />
+    <dl>
+      <dt>type = "password"</dt>
+      <dd>비밀번호 입력란</dd>
+      <dd>사용자가 입력하는 내용이 '*'나 '.'로 표시된다</dd>
+    </dl>
+    <input type="password" size="60" />
+    <dl>
+      <dt>type = "search"</dt>
+      <dd>검색 필드</dd>
+      <dd>검색 창에 x 표시가 되어 검색어 삭제 쉬움</dd>
+    </dl>
+    <dl>
+      <dt>type = "url"</dt>
+      <dd>웹 주소 필드</dd>
+      <dd>http://로 시작하는 사이트 주소 입력</dd>
+    </dl>
+    <dl>
+      <dt>type = "email"</dt>
+      <dd>메일 주소 입력 필드</dd>
+      <dd>메일 주소 형식 자동체크</dd>
+    </dl>
+    <dl>
+      <dt>type = "tel"</dt>
+      <dd>전화번호 입력 필드</dd>
+      <dd>사용자 입력을 체크하지는 않음</dd>
+    </dl>
+
+    <hr />
+    <h2>텍스트 필드와 패스워드 필드의 속성</h2>
+    (단, 패스워드 필드에는 value속성이 없음)
+    <ul>
+      <li>name : 텍스트필드를 구별할 수 있도록 이름을 붙인다</li>
+      <li>
+        size : 텍스트 필드의 길이를 지정한다 즉 화면에 몇 글자가 보이도록 할
+        것인지 지정
+      </li>
+      <li>
+        value : 텍스트 필드 요소가 화면에 표시될때 텍스트 필드 부분에 표시될
+        내용 이 속성을 사용하지 않으면 빈 텍스트 필드가 표시된다.
+      </li>
+      <li>maxlength : 텍스트 필드에 입력할 수 있는 최대 문자 개수를 지정</li>
+    </ul>
+  </body>
+</html>
