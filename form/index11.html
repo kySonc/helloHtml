@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>태그의 다양한 속성</title>
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <legend>신청자</legend>
+        <label class="reg" for="uname">이름</label>
+        <input type="text" id="uname" autofocus required /><br />
+        <label class="reg" for="uid">학번</label>
+        <input type="text" id="uid" placeholder="하이폰 없이 입력" />
+      </fieldset>
+    </form>
+    <dl>
+      <dt>required</dt>
+      <dd>필수 필드 체크</dd>
+      <dd>속성 값이 없이 required라고만 입력</dd>
+      <dd>(required="required" 라고 해도 됨)</dd>
+      <dd>필수 필드는 브라우저에서 직접 체크하는 것이므로</dd>
+      <dd>오류 메시지 내용은 브라우저들 마다 다르게 나타남</dd>
+    </dl>
+  </body>
+</html>
